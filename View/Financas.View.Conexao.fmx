@@ -1,0 +1,176 @@
+object ViewConexao: TViewConexao
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'Conex'#227'o com Banco de Dados'
+  ClientHeight = 336
+  ClientWidth = 251
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object EditDataBase: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    StyleLookup = 'clearingeditstyle'
+    TabOrder = 7
+    Position.X = 8.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = '< Banco de Dados >'
+  end
+  object EditUserName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    StyleLookup = 'clearingeditstyle'
+    TabOrder = 6
+    Position.X = 8.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = '< Usu'#225'rio >'
+  end
+  object EditPassword: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    StyleLookup = 'clearingeditstyle'
+    TabOrder = 5
+    Password = True
+    Position.X = 8.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = '< Senha >'
+  end
+  object EditDriverID: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    StyleLookup = 'clearingeditstyle'
+    TabOrder = 4
+    Position.X = 8.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = '< Driver ID >'
+  end
+  object EditPort: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    StyleLookup = 'clearingeditstyle'
+    TabOrder = 3
+    Position.X = 8.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = '< Porta >'
+  end
+  object EditServer: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    StyleLookup = 'clearingeditstyle'
+    TabOrder = 2
+    Position.X = 8.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = '< Servidor >'
+  end
+  object ButtonGravar: TButton
+    Anchors = [akLeft, akBottom]
+    StyledSettings = [Family, Size, Style]
+    Position.X = 8.000000000000000000
+    Position.Y = 304.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'toolbutton'
+    TabOrder = 10
+    Text = 'Gravar'
+    OnClick = ButtonGravarClick
+  end
+  object LabelDatabase: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'labelstyle'
+    Text = 'Banco de Dados'
+    TabOrder = 16
+  end
+  object LabelUserName: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 8.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'labelstyle'
+    Text = 'Usu'#225'rio'
+    TabOrder = 15
+  end
+  object LabelPassword: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 8.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'labelstyle'
+    Text = 'Senha'
+    TabOrder = 14
+  end
+  object LabelDriverID: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 8.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'labelstyle'
+    Text = 'Driver'
+    TabOrder = 11
+  end
+  object LabelServer: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 8.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'labelstyle'
+    Text = 'Servidor'
+    TabOrder = 13
+  end
+  object LabelPort: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 8.000000000000000000
+    Position.Y = 248.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'labelstyle'
+    Text = 'Porta'
+    TabOrder = 12
+  end
+  object ButtonCancelar: TButton
+    Anchors = [akRight, akBottom]
+    StyledSettings = [Family, Size, Style]
+    Position.X = 136.000000000000000000
+    Position.Y = 304.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'toolbutton'
+    TabOrder = 9
+    Text = 'Cancelar'
+    OnClick = ButtonCancelarClick
+  end
+end

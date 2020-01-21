@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{50B63F1D-0F29-4628-834B-5AE889F0C7BC}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Financas.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Financas">
+        <MSBuild Projects="Financas.dproj"/>
+    </Target>
+    <Target Name="Financas:Clean">
+        <MSBuild Projects="Financas.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Financas:Make">
+        <MSBuild Projects="Financas.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Financas"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Financas:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Financas:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

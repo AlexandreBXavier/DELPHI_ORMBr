@@ -1,0 +1,255 @@
+object ViewPrincipal: TViewPrincipal
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'Sistema Exemplo'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = ScreenCenter
+  StyleBook = StyleBookLocal
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object LayoutMenu: TLayout
+    Align = Left
+    Size.Width = 161.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object LayoutUsername: TLayout
+      Align = Top
+      Size.Width = 161.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object RectangleUsername: TRectangle
+        Align = Client
+        Fill.Color = claSlategray
+        Size.Width = 161.000000000000000000
+        Size.Height = 57.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object LabelUser: TLabel
+        StyledSettings = [Family, Size, Style]
+        Position.X = 56.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 97.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxheaderlabel'
+        TextSettings.FontColor = claWhite
+        TextSettings.VertAlign = Leading
+        TabOrder = 1
+      end
+      object ImageUser: TImage
+        MultiResBitmap.Height = 48
+        MultiResBitmap.Width = 48
+        MultiResBitmap = <
+          item
+            Width = 48
+            Height = 48
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+              87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              0560494441546843ED994D685C5514C79319A69D492A35D2D8168BD68A5A1782
+              9F156BB129058516B1B81074E717B872A108EDC6AF5A5B5D542CBA72A5A02BBB
+              72A3ADA0458D0B454485525110A3D5FAB5D064924C3289BF73EF7F5E66DEBD6F
+              2633992414F383CBBDEF9E73FEE7BC37F3EEDC37AF678515FEE7F4AA5F303333
+              339BE8EE989D9D1DAA56ABBB0A85821D274C4D4D8DE4F3F953BDBDBD1F727822
+              97CBFDEC2DCB08455F46B1C728EE0C85B785C510FB8A69486EE9207F91E48746
+              4747277C399D631A681D645894FCE2C215DB5BA9547EF2E9BB8769A2BD4769BA
+              0F39ECAABFE9D3857025CBD88F53C4BDB4EB99BA9456645CA26D627C1DFD7DF8
+              BC83EFB8C5C4508EEE7E1A080E4C4F4F7FEE32A4989898F89DC21E66D827F796
+              98AFC558AC1349A15C03725F1808AD42F033A75C0757718AEE0885F4CBB56D2C
+              D634D0AA38D13AC8398C7DB55C3B27F6B5191F1FFF1BF1ED72593048EE304DAF
+              3E07B9DF904B6750E443D24A60F9FB816EB35C02881924F161DA49BE227F5AB3
+              B1CD61BB586E01686E41FB7B97A40EAB412EED41EC85636363FF78190FC5FC81
+              60E6BA8DEDAED895AC21DB3EB90760DB6C399CB3500DEDDF0F5CB157BD84C756
+              0E0ABC41E6006C0FC8B525E6ABB0006C37D98A265787D522F3FC20661D22933E
+              3C61BFCC01245D6F2728BF96C87783C203B0ED778EC26A21C7A0CCADE18C0F29
+              D6313939798E2E736DB6EFB7F79C83844FD16DB086FD59375907732F2A3C0073
+              919CBF794F0FFE2FC8DC1C7C7376E3F9300FC53C2A731496BC6FE5EAC0FF804C
+              094C375C556ED8D33245B19C7275E8DEC8C99C0D81B7FA100F1FDF34732599A3
+              E063BF09F5045F0F9BF3260F311599A2E0D267B9BDB7C76A933921764643EA1D
+              A552E903B6BEE33ACC6252BD835CC1363D32D7F404D876972DB70E6B34D46604
+              2740A21B357420F4AE8699148BC51F35ACF1A0FA7A1A569E484C403A37B565AE
+              8209E9EF3304679D069F23DE750E6EBA837CE49758B3B1A613983BACF04C701B
+              F2DE1E6AFB46A66CD237306C9529138ADCC8F7B56BCB680D7CB6BA0061B5C994
+              0DE233F2AFB156A6A67012F7CBBF25E6ABB0A6E0BAD64778A8AD2A533638A577
+              86ED6C93F7B15DF8CB8785C896B99548836F9F0B14569B4CD944F632991BB718
+              F8AFB3EF37EDA4156CCDC6366736B9CD0BCB6D05D4B0DA64CA861BE56BF93BF8
+              B86F9169C921F73695E1B0DA644A08965196AEEF34AC71B3FAE5609B7A47A4B6
+              F004F8D1FA42430727BE5BC325279D3B5D9B11FC62F2B16DE74C3FD5614FB95C
+              FE975FC4F5CD7E8D4954A0D9CFFC2EFAABF1BD8A7DFC35FDFDFD7D954AE55C3E
+              9F3F83A6AD205FD19FA03F4D3F429BB1F818D47101B9CFA2B1465396E736B487
+              751807A71C497FA14F40EC71991BC0B4859BF325AD2E6D616BBAC5A27DB9E41A
+              60FE49B93AD89D9EA56BBD9933106ED84E73422308260FD88CAFC4E778E437A3
+              6D4CC3B44C53F2A6BF5A0527E033BFEDB481C020C20D0F34083C2FDB63695B37
+              304DD3B61C964BD30EE56B6B098E3D5256987B598701B64FC1FE1C45DC43BB96
+              A982A4DC3D6273B447F0794F0F4851B01F2357C3F69CB9D724357F881B483FD4
+              C740FC752B4E61F38698DD9CF49792C9A4E3877A8324C1DF2A35ECEF15EC3BE5
+              DA3168DCCD151F936C80D520D7CEE00ABF25AD06106EFA98D90E683D21D906C8
+              FDB65C3A079D021FF5B0979C83AB66ABC75186ABE4DA36C4DA1FC6474DCB89D6
+              A19CC97DB420B842172118FD7357CBDD33B496FBFB1AE86DA43D4DECAF4E2485
+              E5B29C72EF0EE8B6FA7B9DBCD39F90F800873BE8AFA05F43DF6F63DAED66C3E7
+              637CAB2E2882722CDECB0E8AD8B3882F38F62ACDE242BEF3F715533D5CB1657F
+              C9D7EDD7AC7752DB4E0ACB7ACDFA113BD0531CBECFAE72F95FB3AEB0C2794F4F
+              CF7FC6D27169EEA3510E0000000049454E44AE426082}
+            FileName = 'C:\Temp\2x\outline_account_circle_white_24dp.png'
+          end>
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 41.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object LayoutMenuArea: TLayout
+      Align = Client
+      Size.Width = 161.000000000000000000
+      Size.Height = 423.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object RectangleMenu: TRectangle
+        Align = Client
+        Fill.Color = claSlategray
+        Size.Width = 161.000000000000000000
+        Size.Height = 423.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+      object LayoutListbox: TLayout
+        Align = Client
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 151.000000000000000000
+        Size.Height = 413.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object RectangleListbox: TRectangle
+          Align = Client
+          Fill.Color = claWhite
+          Size.Width = 151.000000000000000000
+          Size.Height = 413.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+      end
+    end
+  end
+  object LayoutMain: TLayout
+    Align = Client
+    Size.Width = 479.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object LayoutTop: TLayout
+      Align = Top
+      Size.Width = 479.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object PanelTop: TPanel
+        Align = Client
+        Size.Width = 479.000000000000000000
+        Size.Height = 57.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object RectangleTop: TRectangle
+          Align = Client
+          Fill.Color = claSlategray
+          Size.Width = 479.000000000000000000
+          Size.Height = 57.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+        end
+        object ButtonDatabase: TButton
+          Anchors = [akTop, akRight]
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 426.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 47.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'ellipseseditbutton'
+          TabOrder = 2
+          Text = 'Database'
+          OnClick = ButtonDatabaseClick
+        end
+        object ButtonException: TButton
+          Anchors = [akTop, akRight]
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 370.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 47.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'infotoolbutton'
+          TabOrder = 1
+          Text = 'Exception'
+          OnClick = ButtonExceptionClick
+        end
+      end
+    end
+    object LayoutDashboard: TLayout
+      Align = Client
+      Size.Width = 479.000000000000000000
+      Size.Height = 423.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object PanelDashboard: TPanel
+        Align = Client
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 469.000000000000000000
+        Size.Height = 413.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+      object RectangleDashboard: TRectangle
+        Align = Client
+        Fill.Color = claSlategray
+        Size.Width = 479.000000000000000000
+        Size.Height = 423.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+      end
+    end
+  end
+  object StyleBookLocal: TStyleBook
+    StyleName = 'LocalStyle'
+    UseStyleManager = True
+    Styles = <
+      item
+        Platform = 'OSX'
+      end
+      item
+        Platform = 'Android'
+      end
+      item
+        Platform = 'iOS'
+      end
+      item
+        Platform = 'Windows'
+      end>
+    Left = 53
+    Top = 14
+  end
+end

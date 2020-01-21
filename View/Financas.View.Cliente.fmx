@@ -1,0 +1,77 @@
+inherited ViewCliente: TViewCliente
+  Caption = 'Cliente(s)'
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  inherited BindNavigator: TBindNavigator
+    OnClick = BindNavigatorClick
+  end
+  inherited PanelTop: TPanel
+    inherited ButtonFind: TButton
+      OnClick = ButtonFindClick
+    end
+  end
+  inherited TabControlDataSet: TTabControl
+    Sizes = (
+      640s
+      388s
+      640s
+      388s)
+    inherited TabList: TTabItem
+      ExplicitSize.cx = 142.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited StringGrid: TStringGrid
+        Viewport.Width = 640.000000000000000000
+        Viewport.Height = 388.000000000000000000
+      end
+    end
+    inherited TabData: TTabItem
+      ExplicitSize.cx = 118.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object EditID: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Position.X = 160.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 185.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object EditNome: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Position.X = 160.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 185.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object EditDocumento: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 0
+        Position.X = 160.000000000000000000
+        Position.Y = 104.000000000000000000
+        Size.Width = 185.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object LabelID: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 40.000000000000000000
+        Text = 'C'#243'digo'
+        TabOrder = 5
+      end
+      object LabelNome: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 72.000000000000000000
+        Text = 'Nome'
+        TabOrder = 4
+      end
+      object LabelDocumento: TLabel
+        Position.X = 32.000000000000000000
+        Position.Y = 104.000000000000000000
+        Text = 'Documento'
+        TabOrder = 3
+      end
+    end
+  end
+end

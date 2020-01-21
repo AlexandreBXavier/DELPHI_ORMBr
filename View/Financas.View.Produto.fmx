@@ -1,0 +1,42 @@
+inherited ViewProduto: TViewProduto
+  Caption = 'Produto(s)'
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  inherited BindNavigator: TBindNavigator
+    OnClick = BindNavigatorClick
+  end
+  inherited PanelTop: TPanel
+    inherited ButtonFind: TButton
+      OnClick = ButtonFindClick
+    end
+    object ButtonException: TButton
+      Position.X = 464.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 3
+      Text = 'Exception'
+      OnClick = ButtonExceptionClick
+    end
+  end
+  inherited TabControlDataSet: TTabControl
+    Sizes = (
+      640s
+      388s
+      640s
+      388s)
+    inherited TabList: TTabItem
+      ExplicitSize.cx = 142.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      inherited StringGrid: TStringGrid
+        Viewport.Width = 640.000000000000000000
+        Viewport.Height = 388.000000000000000000
+      end
+    end
+    inherited TabData: TTabItem
+      ExplicitSize.cx = 118.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+  end
+  inherited DataSource: TDataSource
+    Left = 528
+  end
+end

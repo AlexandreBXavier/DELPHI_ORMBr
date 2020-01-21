@@ -1,0 +1,61 @@
+object ViewSobre: TViewSobre
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'Sobre'
+  ClientHeight = 147
+  ClientWidth = 250
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object LabelSystem: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 16.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'labelstyle'
+    Text = 'Sistema Modelo'
+    TabOrder = 6
+  end
+  object LabelVersion: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 16.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'labelstyle'
+    Text = 'Vers'#227'o 0.0.0.0'
+    TabOrder = 5
+  end
+  object LabelCompany: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 16.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'labelstyle'
+    Text = 'Empresa Modelo'
+    TabOrder = 3
+  end
+  object LabelSite: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 16.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'labelstyle'
+    Text = 'http://www.company.com'
+    TabOrder = 4
+  end
+end

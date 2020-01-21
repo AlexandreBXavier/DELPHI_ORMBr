@@ -1,0 +1,142 @@
+object ViewModelo: TViewModelo
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'View Modelo'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = ScreenCenter
+  StyleBook = ViewPrincipal.StyleBookLocal
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object BindNavigator: TBindNavigator
+    Align = Bottom
+    Position.Y = 455.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DataSource = BindSourceDB
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object PanelTop: TPanel
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object ButtonFind: TButton
+      Position.X = 272.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 0
+      Text = 'Buscar'
+    end
+    object EditFind: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Position.X = 56.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 209.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = '< Texto de Pesquisa >'
+    end
+    object LabelFind: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 105.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Texto:'
+      TabOrder = 2
+    end
+  end
+  object TabControlDataSet: TTabControl
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 414.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 9
+    TabPosition = Bottom
+    Sizes = (
+      640s
+      388s
+      640s
+      388s)
+    object TabList: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 142.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Listagem dos Registros'
+      ExplicitSize.cx = 142.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object StringGrid: TStringGrid
+        Align = Client
+        CanFocus = True
+        ClipChildren = True
+        Size.Width = 640.000000000000000000
+        Size.Height = 388.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Options = [ColLines, RowLines, RowSelect, Tabs, Header, HeaderClick, AutoDisplacement]
+        Viewport.Width = 636.000000000000000000
+        Viewport.Height = 363.000000000000000000
+      end
+    end
+    object TabData: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 118.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Dados do Registro'
+      ExplicitSize.cx = 118.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+    end
+  end
+  object DataSource: TDataSource
+    DataSet = CDSLocal
+    Left = 536
+    Top = 56
+  end
+  object BindSourceDB: TBindSourceDB
+    DataSource = DataSource
+    ScopeMappings = <>
+    Left = 536
+    Top = 104
+  end
+  object BindingsList: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 536
+    Top = 152
+    object LinkGridToDataSourceBindSourceDB: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB
+      GridControl = StringGrid
+      Columns = <>
+    end
+  end
+  object CDSLocal: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 449
+    Top = 61
+  end
+end
